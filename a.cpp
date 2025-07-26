@@ -1,6 +1,15 @@
 #include <iostream>  
+using namespace std;
 
 int main() {
-    std::cout << "Hello, World!" << std::endl; 
+     int a , b;
+     cout<< "enter a:" ;
+    cin>> a ;
+    
+    cout<< "enter b:" ;
+    cin>> b; 
+    
+    int sum = a+b ;
+    cout<< "sum =" << sum << endl;
     return 0;  
 }
