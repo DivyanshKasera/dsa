@@ -2,12 +2,16 @@
 using namespace std;
 
 int main() {
-    int n = 5;
-    if(n>=0){
-        cout <<"n is positive\n";
-    } else {
-        cout <<"n is negative\n";
-    }
+    int marks;
+        cout << "Enter marks: ";
+    cin >> marks;
+       if(marks >= 90){
+        cout<<"A";
+       }else if (marks >= 80 && marks <=90){
+        cout<<"B";
+       } else {
+        cout<<"C";
+       }
     
     return 0;
 }
