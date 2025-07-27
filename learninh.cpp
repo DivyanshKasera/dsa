@@ -2,13 +2,14 @@
 using namespace std;
 
 int main(){
-    int n = 5;
-    
-    for(int i = 1; i<=n; i++){
-        if(i%2 != 0) {
-            cout << i << " ";
+    int n = 4;
+    for(int i=1; i<=n; i++) {
+        int m = 10;
+        for(int j=1; j<=m; j++){
+            cout<<"*";
         }
+        cout<<endl;
     }
-    cout << endl;
-    return 0;
+        return 0;
+    
 }
