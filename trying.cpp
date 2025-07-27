@@ -2,16 +2,12 @@
 using namespace std;
 
 int main() {
-    int marks;
-        cout << "Enter marks: ";
-    cin >> marks;
-       if(marks >= 90){
-        cout<<"A";
-       }else if (marks >= 80 && marks <=90){
-        cout<<"B";
-       } else {
-        cout<<"C";
-       }
-    
-    return 0;
+    int n = 5;
+    int sum = 0;
+       
+    for ( int i=1 , i <= n ; i++ ) {
+        sum += i;
+    }
+        cout <<"sum = " << sum;
+        return 0;
 }
