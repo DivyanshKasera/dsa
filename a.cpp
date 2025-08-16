@@ -2,14 +2,25 @@
 using namespace std;
 
 int main() {
-     int a , b;
-     cout<< "enter a:" ;
-    cin>> a ;
-    
-    cout<< "enter b:" ;
-    cin>> b; 
-    
-    int sum = a+b ;
-    cout<< "sum =" << sum << endl;
-    return 0;  
+     int marks;
+     cin >> marks;
+     if(marks < 25){
+        cout << "F";
+     }
+     else if(marks <= 44){
+        cout << "E";
+     }
+     else if(marks <= 49){
+        cout << "D";
+     }
+     else if(marks <= 59){
+        cout << "C";
+     }
+     else if(marks <= 79){
+        cout << "B";
+     }
+     if(marks <= 100){
+        cout << "A";
+     }
+     return 0;
 }
