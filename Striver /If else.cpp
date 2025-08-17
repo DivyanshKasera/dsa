@@ -77,7 +77,7 @@ void print8(int n) {
    cout<<endl;
     }
 }
-void print10(int n) {
+void print10(int n){
     for(int i = 1; i<=2*n-1; i++){
         int stars = i;
         if(i>n) stars = 2*n-i;
