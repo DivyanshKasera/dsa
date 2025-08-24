@@ -1,23 +1,28 @@
 #include<iostream>
+#include<vector>
 using namespace std;
 
-void reverseArray(int arr[], int size){
-    int start = 0, end = size-1;
-    while(start < end ){
-    swap(arr[start],arr[end]);
-    start++;
-    end--;
-}
+vector<int>pairsum(vector<int> nums , int target){
+    vector<int> ans;
+    int n = nums.size();
+
+    for(int i=0; i<n; i++){
+        for(int j = i+1; j<n; j++){
+            if(nums[i] + nums[j] == target){
+                ans.push_back(i);
+                ans.push_back(j);
+                return ans;
+            }
+        }
+    }
+    return ans;
 }
 
-int main(){
-    int arr[] = {2,4,1,7,5,10};
-     int size = 6;
-     reverseArray(arr , size);
+     int main(){
+        vector<int>nums ={2,3,7,11,15};
+        int target = 13;
 
-     for(int i= 0; i<size;i++){
-        cout<<arr[i]<<" ";
+        vector<int>ans =  pairsum(nums , target);
+        cout<<ans[0]<<", "<<ans[1]<<endl;
+        return 0;
      }
-    cout<<endl;
-     return 0;
-}
