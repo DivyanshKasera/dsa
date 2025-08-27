@@ -2,31 +2,14 @@
 #include<vector>
 using namespace std;
 
-vector<int>pairsum(vector<int> nums , int target){
-    vector<int> ans;
-    int n = nums.size();
+int main(){
+    int arr[] = {1,2,3,4,5};
 
-  int i=0, j = n-1;
-  while(i<j){
-    int pairsum = nums[i] + nums[j];
-    if(pairsum > target){
-        j--;
-    }else if(pairsum < target){
-            i++;
-        }else{
-            ans.push_back(i);
-            ans.push_back(j);
-            return ans;
-        }
-     }
-    return ans;
+    int a =10;
+    int* ptr = &a;
+
+    cout<<ptr<<endl;
+    ptr++;
+    cout<<ptr<<endl;
+     return 0;
 }
-  
-  int main(){
-        vector<int>nums ={2,3,7,11,15};
-        int target = 26;
-
-        vector<int>ans =  pairsum(nums , target);
-        cout<<ans[0]<<", "<<ans[1]<<endl;
-        return 0;
-     }
